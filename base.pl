@@ -17,9 +17,7 @@ hijoDe(A,B):-padreDe(B,A).
 abuelode(A,B) :- padreDe(A,C), padreDe(C,B).
 
 hermanode(A,B) :- padreDe(C,A), padreDe(C,B), A \== B.
-
 escasado(A,B) :- padreDe(A,C), padreDe(B,C), A \== B.
-
 esfeliz(A):- not(escasado(A,_)).
 
 familiarde(A,B) :- padreDe(A,B).
